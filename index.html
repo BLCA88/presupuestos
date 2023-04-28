@@ -10,59 +10,82 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <div>
-                <input type="button" value="Camaras">
-                <input type="button" value="Electricidad">
-                <input type="button" value="Aire Acondicionado">
+            <div>                
+                <a href="/pages/aireacondicionado.html">Aire Acondicionado</a>
+                <a href="/pages/electricidad.html">Electricidad</a>
+                <a href="index.html">Inicio</a>
+                <a href="/pages/electricidad.html">Electricidad Prueba</a>                
             </div>
         </nav>
     </header>
     <main class="main">
-        <form action="" class="contForm">
-            <div class="contCliente">                
-                <input type="text" id="cliente" name="cleinte" placeholder="Cliente">
-                <input type="text" name="asunto" id="asunto" placeholder="Asunto">
-            </div>
-            <div class="contTabla">
+        <form action="" class="contForm">            
+            <div class="contPres" >
+                <div class="contCliente">                
+                    <input type="text" id="cliente" name="cleinte" placeholder="Cliente">
+                    <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+                </div>
                 <table>
                     <thead>
                         <tr>
-                            <th>Items</th>
-                            <th>Cantidad</th>
-                            <th>P.U</th>
-                            <th>Sub</th>
-                        </tr>
+                            <th class="fila1">Items</th>
+                            <th class="fila2">Cant.</th>
+                            <th class="fila3">P.U</th>
+                            <th class="fila4">Sub</th>                            
+                        </tr>                        
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input type="text" name="" id=""></td>
-                            <td><input type="text" name="" id=""></td>
-                            <td><input type="text" name="" id=""></td>
-                            <td><input type="text" name="" id=""></td>
+                            <td class="fila1"><input type="text" name="" id=""></td>
+                            <td class="fila2">
+                                <div class="contCant">
+                                    <input type="number" min="1" value="1" name="" id="">                                    
+                                </div>                                
+                            </td>
+                            <td class="fila3"><input type="text" name="" id=""></td>
+                            <td class="fila4"><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td class="fila1"><input type="text" name="" id=""></td>
+                            <td class="fila2">
+                                <div class="contCant">
+                                    <input type="number" min="1" value="1" name="" id="">
+                                </div>                                
+                            </td>
+                            <td class="fila3"><input type="text" name="" id=""></td>
+                            <td class="fila4"><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td class="fila1"><input type="text" name="" id=""></td>
+                            <td class="fila2">
+                                <div class="contCant">
+                                    <input type="number" min="1" value="1" name="" id="">
+                                </div>                                
+                            </td>
+                            <td class="fila3"><input type="text" name="" id=""></td>
+                            <td class="fila4"><input type="text" name="" id=""></td>
                         </tr>
                     </tbody>                                        
                     <tfoot>
                         <tr>
-                            <th>TOTAL</th>
-                            <td><input type="text" name="" id=""></td>                            
+                            <th class="fila3">TOTAL</th>
+                            <td class="fila4"><input type="text" name="" id=""></td>                            
                         </tr>
                         <tr>
-                            <th>IVA</th>
-                            <td><input type="text" name="" id=""></td>
+                            <th class="fila3">IVA%</th>
+                            <td class="fila4"><input type="text" name="" id=""></td>
                         </tr>
                         <tr>
-                            <th>DESC</th>
-                            <td><input type="text" name="" id=""></td>
-                        </tr>
-                        <tr class="trBtn">
-                            <td><input type="button" value="Generar Presupuesto"></td>
-                        </tr>
+                            <th class="fila3">DESC</th>
+                            <td class="fila4"><input type="text" name="" id=""></td>
+                        </tr>                        
                     </tfoot>
                 </table>
-                
-                  
+                <div class="contBtn">
+                    <input class="btnGP" type="button" value="Generar Presupuesto">
+                </div>                                  
             </div>            
-        </form>
+        </form>        
     </main>
     <footer>
             

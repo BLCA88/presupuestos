@@ -1,0 +1,16 @@
+body {
+    background-color: aqua;
+}
+
+header {
+    background-color: blue;
+    height: 15vh;
+}
+main {
+    background-color: burlywood;
+    height: 65vh;
+}
+footer {
+    background-color: chocolate;
+    height: 15vh;
+}
