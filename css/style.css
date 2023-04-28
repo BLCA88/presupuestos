@@ -13,7 +13,8 @@ body {
 
 /*-------------------------<Header>------------------------------*/
 .header {
-    grid-area: header;    
+    grid-area: header;
+    height: 60px;    
 }
 
 /* a {
@@ -40,7 +41,7 @@ a:hover {
     grid-area: main;
     background-color: rgb(144, 145, 145);
     width: 100vw;
-    height: 500px;
+    height: 700px;
 }
 .contForm {
     display: flex;
@@ -55,6 +56,8 @@ a:hover {
     justify-content: center;
     align-items: center;
     background-color: rgb(106, 218, 162);
+    border-radius: 5px;
+    margin: 50px;
     width: 80%;
     height: 100%;    
 }
@@ -63,9 +66,12 @@ a:hover {
 .contCliente {
     display: flex;
     flex-direction: column;
-    background-color: coral;
-    width: 20vw;
+    justify-content: center;
+    align-items: center;    
+    width: 40vw;
     height: 80px;
+    margin-right: 250px;
+    margin-top: 40px;
 }
 
 
@@ -73,7 +79,7 @@ a:hover {
 
 table { 
     background-color: whitesmoke; 
-    border-radius: 10px;
+    border-radius: 2px;
     width: 80%;
     height: 90%;
     margin-top: 20px;    
@@ -130,5 +136,6 @@ input {
 /*---------------------------<Footer>----------------------*/
 .footer {
     grid-area: footer;
+    height: 60px;
 }
 
