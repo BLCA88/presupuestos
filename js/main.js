@@ -1,12 +1,14 @@
-const btnFila = document.querySelector("#agreFila");
-console.log(btnFila);
 
+/* Se obtiene la etiqueta table y el hijo tbody */ 
 const tabla = document.querySelector("table");
-const tr = document.querySelector("#tr");
-console.log(tabla, tr);
-console.log(tabla);
+const tbody = document.querySelector("tbody");
+
+/* Se obtiene las etiquetas input button con los ID "#agreFila" y "#elimFila" */
+const btnFila = document.querySelector("#agreFila");
+// const btnElmFila = document.querySelector("#elimFila"); //Este boton no se agrego al HTML aún.
 
 
+/*-----<Funcion para agregar fila>-------*/
 btnFila.addEventListener('click', () => {
     console.log("Funciona gato");
     tabla.querySelector("tbody").innerHTML += `
@@ -21,5 +23,10 @@ btnFila.addEventListener('click', () => {
         <td class="fila4"><input type="text" name="" id=""></td>
     </tr>
   `;
+});
 
+/*-------<Funcion para eliminar fila>------*/
+btnElmFila.addEventListener("click", () => {
+  const ultimaFila = tbody.lastElementChild;
+  tbody.removeChild(ultimaFila);
 });
