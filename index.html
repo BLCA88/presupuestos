@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presupuesto</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -21,9 +24,11 @@
     <main class="main">
         <form action="" class="contForm">            
             <div class="contPres" >
-                <div class="contCliente">                
-                    <input type="text" id="cliente" name="cleinte" placeholder="Cliente">
-                    <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+                <div class="contPrincipalCliente">
+                    <div>
+                        <input type="text" id="cliente" name="cleinte" placeholder="Cliente">
+                        <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+                    </div>
                 </div>
                 <table>
                     <thead>
@@ -66,11 +71,7 @@
                             <td class="fila4"><input type="text" name="" id=""></td>
                         </tr>
                     </tbody>                                        
-                    <tfoot>
-                        <tr>
-                            <th class="fila3">TOTAL</th>
-                            <td class="fila4"><input type="text" name="" id=""></td>                            
-                        </tr>
+                    <tfoot>                        
                         <tr>
                             <th class="fila3">IVA%</th>
                             <td class="fila4"><input type="text" name="" id=""></td>
@@ -78,6 +79,10 @@
                         <tr>
                             <th class="fila3">DESC</th>
                             <td class="fila4"><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <th class="fila3">TOTAL</th>
+                            <td class="fila4"><input type="text" name="" id=""></td>                            
                         </tr>                        
                     </tfoot>
                 </table>
@@ -90,5 +95,6 @@
     <footer class="footer">
             
     </footer>
+    <script src="js/main.js"></script> 
 </body>
 </html>
